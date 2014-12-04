@@ -1,0 +1,59 @@
+extends layout
+
+block content
+    script(src='/javascripts/users.js')
+    h1= title
+    p Welcome to our test
+
+    // Wrapper
+    #wrapper
+        // user INFO
+        #userInfo
+            h2 user Info
+            p
+                strong Name:
+                |  <span id='userInfoName'></span>
+                br
+                strong Age:
+                |  <span id='userInfoAge'></span>
+                br
+                strong Gender:
+                |  <span id='userInfoGender'></span>
+                br
+                strong Location:
+                |  <span id='userInfoLocation'></span>
+        // /user INFO
+
+
+        // user LIST
+        h2 user List
+        #userList
+            table
+                thead
+                    th userName
+                    th Email
+                    th Update
+                    th Delete?
+                tbody
+        // /user LIST
+
+
+        // ADD user
+        h2 Add user
+        #adduser
+            fieldset
+                input#inputuserName(type='text', placeholder='username')
+                input#inputuserEmail(type='text', placeholder='Email')
+                br
+                input#inputuserFullname(type='text', placeholder='Full Name')
+                input#inputuserAge(type='text', placeholder='Age')
+                br
+                input#inputuserLocation(type='text', placeholder='Location')
+                input#inputuserGender(type='text', placeholder='gender')
+                br
+                button#btnAdduser Add user
+        // /ADD user
+
+
+    // /WRAPPER
+

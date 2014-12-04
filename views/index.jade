@@ -1,0 +1,59 @@
+extends layout
+
+block content
+    script(src='/javascripts/global.js')
+    h1= title
+    p Welcome to our test
+
+    // Wrapper
+    #wrapper
+        // Product INFO
+        #ProductInfo
+            h2 Product Info
+            p
+                strong Name:
+                |  <span id='ProductInfoName'></span>
+                br
+                strong Age:
+                |  <span id='ProductInfoAge'></span>
+                br
+                strong Gender:
+                |  <span id='ProductInfoGender'></span>
+                br
+                strong Location:
+                |  <span id='ProductInfoLocation'></span>
+        // /Product INFO
+
+
+        // Product LIST
+        h2 Product List
+        #ProductList
+            table
+                thead
+                    th ProductName
+                    th Email
+                    th Update
+                    th Delete?
+                tbody
+        // /Product LIST
+
+
+        // ADD Product
+        h2 Add Product
+        #addProduct
+            fieldset
+                input#inputProductName(type='text', placeholder='Productname')
+                input#inputProductEmail(type='text', placeholder='Email')
+                br
+                input#inputProductFullname(type='text', placeholder='Full Name')
+                input#inputProductAge(type='text', placeholder='Age')
+                br
+                input#inputProductLocation(type='text', placeholder='Location')
+                input#inputProductGender(type='text', placeholder='gender')
+                br
+                button#btnAddProduct Add Product
+        // /ADD Product
+
+
+    // /WRAPPER
+

@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/subStyle.css')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+  body
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    div#outerarea
+      div#innerarea
+        div#header
+          a(href="/")
+            img.logo(align="left",src="/images/logo.jpg",border=0)
+          div#nav
+            a.nav(href="/") Home
+            span  | 
+            a.nav(href="/products") Products
+            span  | 
+            a.nav(href="/offers") Offers
+            span  | 
+            a.nav(href="/Contact") Contact Us
+            span  | 
+            - if (!user) {
+              a.nav(href="/login") Login
+            - } else {
+              span welcome: #{user}  
+              a.nav(href="/logout") Logout
+            - }
+        div#bodyContent
+          block content
+        div#footer All copy rights belongs to Arterena
+    

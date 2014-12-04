@@ -1,0 +1,43 @@
+extends layout
+
+block content
+    // Wrapper
+    #wrapper
+
+        // Category
+        #CatogryInfo
+            div#category
+        // /Category
+
+
+        // Product LIST
+        h2 Product List
+        #ProductList
+            table
+                thead
+                    th ProductName
+                    th By
+                    th 
+                tbody
+        // /Product LIST
+
+
+        // ADD Product
+        - if (user) {
+            h2 Add Product
+            #addProduct
+                fieldset
+                    input#inputProductName(type='text', placeholder='Productname')
+                    br
+                    input#inputProductDesc(type='text', placeholder='Description')
+                    br
+                    input#inputProdutCategory(type='text', placeholder='Category')
+                    br
+                    button#btnAddProduct Add Product
+        - }
+        // /ADD Product
+
+
+    // /WRAPPER
+    script(src='/javascripts/product.js')
+
