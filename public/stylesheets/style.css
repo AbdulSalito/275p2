@@ -66,10 +66,6 @@ body {
   color: #000000;
 }
 
-table {
-  width: 100%;
-  table-layout: auto;
-}
 img.logo {
   padding: 5px;
 }
@@ -78,74 +74,4 @@ a {
 }
 a.nav {
   color: #FFFFFF;
-}
-
-.itemContainer{
-  padding:11px 0;
-  font-size:15px;
-}
-.price{
-  display:block;
-  float:left;
-  background:url(images/span.png);
-  width:33px;
-  height:21px;
-  line-height:20px;
-  margin:6px 4px 0 0;
-  color:#000000;
-  font-size:15px;
-  padding:2px 0 0 5px;
-  font-weight:lighter;
-  
-}
-.itemImage{
-  float:left;
-  width:60px;
-}
-.itemName{
-  width:85px;
-}
-.itemPrice{
-  width:85px;
-  color:#418932;
-}
-
-.itemTotal{
-  color:#c23f26;
-}
-b{
-  float:left;
-  font-size:15px;
-  color:#333;
-}
-b a{
-  font-size:12px;
-  color:#c23f26;
-}
-#sidebar{
-  float:right;
-  margin-right:5px;
-  width:248px;
-  /*margin-top:-70px;*/
-  
-}
-#sidebar a{
-  font-size:11px;
-  color:#000;
-}
-#sidebar a.simpleCart_checkout,
-.checkoutEmptyLinks a.simpleCart_checkout{
-  display:-moz-inline-box;
-  display:inline-block;
-  width:87px;
-  height:25px;
-  background:url('/images/btnCheckout.gif');
-  overflow:hidden;
-  margin-left:100px;
-  vertical-align:middle;
-  text-indent:-9999px;
-  font-size:0;
-}
-a.btnCheckout:hover{
-  background-position:87px 0;
 }
